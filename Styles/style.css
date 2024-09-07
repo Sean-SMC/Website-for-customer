@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: url(/Images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+/* nav logo format*/
+nav .logo{
+    width: 100px;
+}
+/*homepage title*/
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 100px;
+    color: azure;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px azure;
+    color: transparent;
+}
+/* window styles */
+.content, .messageBox{
+    color: azure;
+}
+/* get started button*/
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: azure  !important;
+    font-size: 24px;
+    border: 2px solid azure;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.5s;
+}
+.content a:hover {
+    background-color: rgba(32, 33, 36, 0.75) !important;
+}
+
+/* placeholders to keep boxes in center of screen*/
+#placeholderIndex {
+    height: 280px;
+}
+#placeholderGrid {
+    height: 200px;
+}
+.grid{
+    color: white;
+}
+.welcomeMessage {
+    font-weight: 500;
+    text-align: center;
+}
+.messageBox{
+    background-color: rgba(32, 33, 36, 1);
+    border: 3px solid azure;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.messageBox.long {
+    max-width: 1000px;
+}
+.inputBoxSmall {
+    width: 75px;
+}
+.errorMessage {
+    color: red;
+    font-weight: 700;
+}
+.button {
+    background-color: rgba(32, 33, 36, 1);
+    border-radius: 20px;
+    border: 2px solid azure;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: rgba(16, 16, 18, 1);
+    border: 2px solid rgb(203,128,89);
+    color: rgb(203,128,89);
+}
+.button.speed {
+    display: flex;
+    flex-direction: row;
+}
+.errorBox {
+    border:2px solid red;
+}
+label {
+    padding-bottom: 5px;
+}
+tr {
+    padding: 5px;
+    border: 2px solid white;
+}
+td {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: white;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for the paint drop */
+.paint-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+/*animation needs this css*/
+[class^="cell-"]{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    clip-path: circle(30%);
+}
+
+.animationText {
+    opacity: 0;
+}
+
+.animationContent {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.speed-items {
+    display: flex;
+    flex-direction: row;
+}
+
+#finishExpOneMessage {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#graphOverlay{
+    background-color: rgba(32, 33, 36, 1);
+    border: 3px solid azure;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+#graphHide{
+    background-color: rgba(32, 33, 36, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 20px;
+    color: white;
+}
+
+#graphHide:hover {
+    background-color: rgba(16, 16, 18, 1);
+    border: 2px solid rgb(203,128,89);
+    color: rgb(203,128,89);
+}
+
+#closeTable{
+    background-color: rgba(32, 33, 36, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 20px;
+    color: white;
+}
+
+#closeTable:hover {
+    background-color: rgba(16, 16, 18, 1);
+    border: 2px solid rgb(203,128,89);
+    color: rgb(203,128,89);
+}
+
+#progressBar {
+    width: 100%;
+}
+
+/*responsive transparency*/
+@media only screen and (max-width: 628px) {
+    .messageBox {
+        background-color: rgba(32, 33, 36, 0.8);
+    }
+    .button {
+        background-color: rgba(32, 33, 36, 0);
+    }
+    .button:hover {
+        background-color: rgba(32, 33, 36, 1);
+        border: 2px solid azure;
+        color: white;
+    }
+    #graphOverlay {
+        background-color: rgba(32, 33, 36, 0.8);
+    }
+    #closeTable {
+        background-color: rgba(32, 33, 36, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    #graphHide:hover {
+        background-color: rgba(32, 33, 36, 1);
+        border: 2px solid azure;
+        color: white;
+    }
+    #closeTable:hover {
+        background-color: rgba(32, 33, 36, 1);
+        border: 2px solid azure;
+        color: white;
+    }
+}

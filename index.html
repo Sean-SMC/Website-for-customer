@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content =" width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/Favicons/site.webmanifest">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bootstrapperschromacanvas - Home</title>
+</head>
+<body>
+    <div class="container-fluid">
+            <nav>
+                <a href="./index.html">
+                    <img src = "Images/Logo.png" class = "logo" alt="Our Main Logo">
+                </a>
+            </nav>
+        <div id="placeholderIndex" class="row"></div>
+        <div class="content">
+            <div id="initialButton">
+                <h1>Chroma Canvas</h1>
+                <a onclick="ShowMessage();introAnimation();">Get Started</a>
+            </div>
+            <div id="welcomeMessage" class="messageBox welcomeMessage" hidden="hidden">
+                <form onsubmit="return GoToGrid()">
+                    <h2>Welcome to Chroma Canvas</h2><br><br>
+                     <div id="animationStaging">
+                         <h2 id="animationText" class="animationText">This website paints grid-based images like so: </h2>
+                         <table id="animationTable" class="animationContent">
+                             <tr>
+                                 <td style="background-color:blue;"></td>
+                                 <td style="background-color:orange;"></td>
+                             </tr>
+                             <tr>
+                                 <td style="background-color:red;"></td>
+                                 <td style="background-color:green;"></td>
+                             </tr>
+                         </table>
+                         <h4 id="animationList1" class="animationContent" hidden="hidden">1. X Dimension</h4>
+                         <h4 id="animationList2" class="animationContent" hidden="hidden">2. Y Dimension</h4>
+                         <h4 id="animationList3" class="animationContent" hidden="hidden">3. Color Choices 1-3</h4>
+                         <h4 id="animationList4" class="animationContent"hidden="hidden">4. Stopping Criteria</h4>
+                         <table id="xDimensionTable" class="animationContent" hidden="hidden">
+                             <tr>
+                                 <td style="background-color:white;"></td>
+                                 <td style="background-color:white;"></td>
+                                 <td style="background-color:white;"></td>
+                             </tr>
+                         </table>
+                         <table id="yDimensionTable" class="animationContent" hidden="hidden">
+                             <tr>
+                                 <td style="background-color:white;"></td>
+                             </tr>
+                             <tr>
+                                 <td style="background-color:white;"></td>
+                             </tr>
+                             <tr>
+                                 <td style="background-color:white;"></td>
+                             </tr>
+                         </table>
+                         <table id="colorTable" class="animationContent" hidden="hidden">
+                             <tr>
+                                 <td style="background-color:blue;"></td>
+                                 <td style="background-color:red;"></td>
+                             </tr>
+                             <tr>
+                                 <td style="background-color:red;"></td>
+                                 <td style="background-color:green;"></td>
+                             </tr>
+                         </table>
+                     </div>
+                    <br><br>
+                    <button id="decrement" class="button" type="button" onclick=introAnimation.decrementPage() hidden="hidden">Previous Page</button>
+                    <button id="submit" class="button" hidden="hidden" type="submit">Try It!</button>
+                    <button id="increment" class="button" type="button" onclick="introAnimation.incrementPage()">Next Page</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/Index.js"></script>
+</body>
+</html>
