@@ -11,7 +11,6 @@
 - [Displaying Results](#displaying-results)
 - [Creating Graphs](#creating-graphs)
 - [Continuing or Starting Anew](#continuing-or-starting-anew)
-- [Conclusion](#conclusion)
 
 ## Introduction
 Welcome to **Chroma Canvas**, a fun and educational website that allows you to experiment with colors and explore the effects of mixing different paint drops on a grid canvas. This user manual will guide you through the website's features and help you make the most of your experiments.
